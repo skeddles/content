@@ -81,11 +81,12 @@ The replacement string can include the following special replacement patterns:
 // "oo"; the second group exists but isn't matched
 ```
 
+> **Note:** The special replacement patterns do _not_ apply for strings returned from the replacer function below.
+
+
 ### Specifying a function as the replacement
 
 You can specify a function as the second parameter. In this case, the function will be invoked after the match has been performed. The function's result (return value) will be used as the replacement string.
-
-> **Note:** The above-mentioned special replacement patterns do _not_ apply for strings returned from the replacer function.
 
 The function has the following signature:
 
